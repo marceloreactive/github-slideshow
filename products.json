@@ -1,0 +1,22 @@
+[
+    {
+        "product_name": "Arroz Agulhinha Tipo 1 Camil 5kg",
+        "price": "R$ 25,90",
+        "supermarket": "Pão de Açúcar (Exemplo)"
+    },
+    {
+        "product_name": "Arroz Integral Orgânico Mãe Terra 1kg",
+        "price": "R$ 12,50",
+        "supermarket": "Pão de Açúcar (Exemplo)"
+    },
+    {
+        "product_name": "Feijão Carioca Tipo 1 Camil 1kg",
+        "price": "R$ 8,79",
+        "supermarket": "Pão de Açúcar (Exemplo)"
+    },
+    {
+        "product_name": "Azeite Extra Virgem Gallo 500ml",
+        "price": "R$ 35,99",
+        "supermarket": "Pão de Açúcar (Exemplo)"
+    }
+]
