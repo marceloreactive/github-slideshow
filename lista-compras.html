@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Lista de Compras - Gerador de Cardápio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shopping-list-page">
+
+    <header class="main-header no-print">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Logo</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Gerador de Cardápio</a></li>
+                <li><a href="categorias.html">Receitas por Categoria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shopping-list-content">
+            <h1>Sua Lista de Compras para a Semana</h1>
+            <button onclick="window.print();" class="btn-primary no-print">Imprimir Lista</button>
+
+            <div class="list-container">
+                <div class="category-group">
+                    <h2>Hortifrúti</h2>
+                    <ul class="shopping-list">
+                        <li><input type="checkbox" id="item1"> <label for="item1">2 dentes de alho</label></li>
+                        <li><input type="checkbox" id="item2"> <label for="item2">1 limão</label></li>
+                        <li><input type="checkbox" id="item3"> <label for="item3">2 pratos de folhas verdes (alface, rúcula)</label></li>
+                        <li><input type="checkbox" id="item4"> <label for="item4">1 cenoura</label></li>
+                        <li><input type="checkbox" id="item5"> <label for="item5">1 pepino</label></li>
+                        <li><input type="checkbox" id="item6"> <label for="item6">16 tomates cereja</label></li>
+                        <li><input type="checkbox" id="item7"> <label for="item7">Brócolis</label></li>
+                        <li><input type="checkbox" id="item8"> <label for="item8">Frutas variadas para vitamina</label></li>
+                        <li><input type="checkbox" id="item9"> <label for="item9">Batatas</label></li>
+                        <li><input type="checkbox" id="item10"> <label for="item10">Cebola</label></li>
+                    </ul>
+                </div>
+
+                <div class="category-group">
+                    <h2>Açougue / Peixaria</h2>
+                    <ul class="shopping-list">
+                        <li><input type="checkbox" id="item11"> <label for="item11">4 filés de frango</label></li>
+                        <li><input type="checkbox" id="item12"> <label for="item12">2 postas de salmão</label></li>
+                        <li><input type="checkbox" id="item13"> <label for="item13">500g de carne moída</label></li>
+                        <li><input type="checkbox" id="item14"> <label for="item14">500g de carne para strogonoff</label></li>
+                        <li><input type="checkbox" id="item15"> <label for="item15">Peito de frango para assar</label></li>
+                        <li><input type="checkbox" id="item16"> <label for="item16">Linguiça para caldo verde</label></li>
+                    </ul>
+                </div>
+
+                <div class="category-group">
+                    <h2>Mercearia</h2>
+                    <ul class="shopping-list">
+                        <li><input type="checkbox" id="item17"> <label for="item17">Sal e pimenta</label></li>
+                        <li><input type="checkbox" id="item18"> <label for="item18">Azeite</label></li>
+                        <li><input type="checkbox" id="item19"> <label for="item19">Granola</label></li>
+                        <li><input type="checkbox" id="item20"> <label for="item20">Macarrão</label></li>
+                        <li><input type="checkbox" id="item21"> <label for="item21">Molho pesto</label></li>
+                        <li><input type="checkbox" id="item22"> <label for="item22">Farinha de trigo</label></li>
+                        <li><input type="checkbox" id="item23"> <label for="item23">Molho de tomate</label></li>
+                        <li><input type="checkbox" id="item24"> <label for="item24">Arroz</label></li>
+                        <li><input type="checkbox" id="item25"> <label for="item25">Feijão</label></li>
+                        <li><input type="checkbox" id="item26"> <label for="item26">Farinha de milho (fubá)</label></li>
+                    </ul>
+                </div>
+
+                <div class="category-group">
+                    <h2>Laticínios e Frios</h2>
+                    <ul class="shopping-list">
+                        <li><input type="checkbox" id="item27"> <label for="item27">1 dúzia de ovos</label></li>
+                        <li><input type="checkbox" id="item28"> <label for="item28">Iogurte natural</label></li>
+                        <li><input type="checkbox" id="item29"> <label for="item29">Leite</label></li>
+                        <li><input type="checkbox" id="item30"> <label for="item30">Queijo mussarela</label></li>
+                        <li><input type="checkbox" id="item31"> <label for="item31">Queijo parmesão ralado</label></li>
+                        <li><input type="checkbox" id="item32"> <label for="item32">Creme de leite</label></li>
+                        <li><input type="checkbox" id="item33"> <label for="item33">Presunto</label></li>
+                        <li><input type="checkbox" id="item34"> <label for="item34">Manteiga</label></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer no-print">
+        <p>&copy; 2025 Gerador de Cardápio Semanal. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

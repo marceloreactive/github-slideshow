@@ -1,13 +1,110 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cardápio Semanal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Logo</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Gerador de Cardápio</a></li>
+                <li><a href="categorias.html">Receitas por Categoria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Sua semana resolvida em 10 segundos.</h1>
+                <p>Crie um cardápio semanal personalizado com base nas suas preferências.</p>
+
+                <form id="generator-form" class="generator-form">
+                    <div class="form-group">
+                        <label for="preferencias">Preferências</label>
+                        <select id="preferencias" name="preferencias">
+                            <option value="caseira">Comida Caseira</option>
+                            <option value="rapida">Rápida e Fácil</option>
+                            <option value="vegetariana">Vegetariana</option>
+                            <option value="low-carb">Low Carb</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="restricoes">Restrições</label>
+                        <select id="restricoes" name="restricoes">
+                            <option value="nenhuma">Nenhuma</option>
+                            <option value="sem-gluten">Sem Glúten</option>
+                            <option value="sem-lactose">Sem Lactose</option>
+                            <option value="vegano">Vegano</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pessoas">Pessoas</label>
+                        <input type="number" id="pessoas" name="pessoas" value="2" min="1">
+                    </div>
+                    <button type="submit" class="btn-primary">GERAR MEU CARDÁPIO</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>Como Funciona?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Escolha suas Preferências</h3>
+                    <p>Selecione o tipo de comida, restrições e para quantas pessoas.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Receba seu Cardápio</h3>
+                    <p>Nosso sistema gera um cardápio completo para a sua semana.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Gere a Lista de Compras</h3>
+                    <p>Com um clique, tenha todos os ingredientes organizados para ir ao mercado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-recipes">
+            <h2>Receitas Populares da Semana</h2>
+            <div class="recipe-grid">
+                <!-- Placeholder para 6 receitas -->
+                <div class="recipe-card"><a href="receita.html"><img src="images/placeholder.jpg" alt="Receita 1"><h3>Nome da Receita 1</h3></a></div>
+                <div class="recipe-card"><a href="receita.html"><img src="images/placeholder.jpg" alt="Receita 2"><h3>Nome da Receita 2</h3></a></div>
+                <div class="recipe-card"><a href="receita.html"><img src="images/placeholder.jpg" alt="Receita 3"><h3>Nome da Receita 3</h3></a></div>
+                <div class="recipe-card"><a href="receita.html"><img src="images/placeholder.jpg" alt="Receita 4"><h3>Nome da Receita 4</h3></a></div>
+                <div class="recipe-card"><a href="receita.html"><img src="images/placeholder.jpg" alt="Receita 5"><h3>Nome da Receita 5</h3></a></div>
+                <div class="recipe-card"><a href="receita.html"><img src="images/placeholder.jpg" alt="Receita 6"><h3>Nome da Receita 6</h3></a></div>
+            </div>
+        </section>
+
+        <section class="latest-articles">
+            <h2>Últimas do Blog</h2>
+            <div class="article-grid">
+                 <!-- Placeholder para 3 artigos -->
+                <div class="article-card"><a href="blog.html"><h3>Título do Artigo 1</h3><p>Um pequeno resumo do que se trata este artigo do blog...</p></a></div>
+                <div class="article-card"><a href="blog.html"><h3>Título do Artigo 2</h3><p>Um pequeno resumo do que se trata este artigo do blog...</p></a></div>
+                <div class="article-card"><a href="blog.html"><h3>Título do Artigo 3</h3><p>Um pequeno resumo do que se trata este artigo do blog...</p></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Gerador de Cardápio Semanal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

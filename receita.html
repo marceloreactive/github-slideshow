@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Receita - Gerador de Cardápio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Logo</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Gerador de Cardápio</a></li>
+                <li><a href="categorias.html">Receitas por Categoria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="recipe-page">
+        <article>
+            <h1>Frango Grelhado com Salada Colorida</h1>
+
+            <div class="recipe-meta">
+                <img src="images/placeholder.jpg" alt="Frango Grelhado com Salada" class="recipe-photo">
+                <div class="meta-details">
+                    <div class="rating">★★★★☆ (4.5/5)</div>
+                    <div class="prep-time"><strong>Tempo:</strong> 25 min</div>
+                    <div class="servings"><strong>Porções:</strong> 2</div>
+                    <div class="calories"><strong>Calorias:</strong> 350 kcal</div>
+                </div>
+            </div>
+
+            <div class="recipe-intro">
+                <p>Uma receita clássica, rápida e saudável para o almoço do dia a dia. O frango fica suculento e a salada dá o toque de frescor e crocância.</p>
+            </div>
+
+            <div class="recipe-body">
+                <aside class="ingredients-sidebar">
+                    <h2>Ingredientes</h2>
+                    <ul>
+                        <li><input type="checkbox" id="ing1"> <label for="ing1">2 filés de frango</label></li>
+                        <li><input type="checkbox" id="ing2"> <label for="ing2">1 dente de alho picado</label></li>
+                        <li><input type="checkbox" id="ing3"> <label for="ing3">Suco de 1/2 limão</label></li>
+                        <li><input type="checkbox" id="ing4"> <label for="ing4">Sal e pimenta a gosto</label></li>
+                        <li><input type="checkbox" id="ing5"> <label for="ing5">1 prato de folhas verdes (alface, rúcula)</label></li>
+                        <li><input type="checkbox" id="ing6"> <label for="ing6">1/2 cenoura ralada</label></li>
+                        <li><input type="checkbox" id="ing7"> <label for="ing7">1/2 pepino em rodelas</label></li>
+                        <li><input type="checkbox" id="ing8"> <label for="ing8">8 tomates cereja</label></li>
+                        <li><input type="checkbox" id="ing9"> <label for="ing9">Azeite para temperar</label></li>
+                    </ul>
+                </aside>
+
+                <section class="preparation-steps">
+                    <h2>Modo de Preparo</h2>
+                    <ol>
+                        <li>Tempere os filés de frango com o alho, limão, sal e pimenta. Deixe marinar por 10 minutos.</li>
+                        <li>Aqueça uma frigideira ou grill e grelhe os filés de frango até dourarem dos dois lados.</li>
+                        <li>Enquanto o frango grelha, monte a salada em um prato, misturando as folhas, a cenoura, o pepino e os tomates.</li>
+                        <li>Fatie o frango grelhado e coloque sobre a salada.</li>
+                        <li>Tempere a salada com azeite e sal a gosto. Sirva imediatamente.</li>
+                    </ol>
+                </section>
+            </div>
+
+            <section class="recipe-video">
+                <h2>Vídeo da Receita</h2>
+                <!-- Placeholder for an embedded video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+            <section class="comments-section">
+                <h2>Comentários e Avaliações</h2>
+                <div class="comment">
+                    <p><strong>Maria S.:</strong> "Fiz hoje no almoço e ficou uma delícia! Super rápido e prático."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                <div class="comment">
+                    <p><strong>João P.:</strong> "Ótima receita para a dieta. Adicionei um pouco de orégano no frango."</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+                <!-- Comment form placeholder -->
+                <form class="comment-form">
+                    <h3>Deixe seu comentário</h3>
+                    <input type="text" placeholder="Seu nome" required>
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <button type="submit" class="btn-secondary">Enviar Comentário</button>
+                </form>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Gerador de Cardápio Semanal. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
