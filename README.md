@@ -1,16 +1,15 @@
-# App de Atualização de Cronogramas do MS Project
+# Cesta Certa - Inteligência de Compra para Supermercados
 
-Este projeto é uma aplicação web desenvolvida para permitir a atualização remota de cronogramas do Microsoft Project. Ele foi projetado para facilitar a comunicação entre a equipe de planejamento e a equipe de campo em projetos de construção.
+O "Cesta Certa" é um aplicativo móvel projetado para garantir que os consumidores brasileiros paguem o menor preço possível em suas compras de supermercado. A aplicação permite que os usuários criem listas de compras e, com um único toque, descubram a combinação ótima de supermercados para maximizar sua economia.
 
-## Fluxo de Trabalho
+## Proposta de Valor
 
-1.  **Importação:** O cronograma de uma obra, criado no MS Project, é exportado como um arquivo XML e importado para esta aplicação.
-2.  **Atualização em Campo:** A equipe de campo acessa o cronograma da obra através de uma interface web, onde podem atualizar o percentual de conclusão de cada tarefa, adicionar comentários e anexar fotos.
-3.  **Exportação:** As atualizações de progresso são consolidadas e podem ser exportadas em um formato compatível (XML ou CSV).
-4.  **Sincronização:** O planejador importa o arquivo de atualização de volta para o MS Project para sincronizar o cronograma com os dados mais recentes do campo.
+Nossa missão é devolver o poder de compra ao consumidor, oferecendo uma ferramenta inteligente que compara os preços da cesta de compras completa em diversos estabelecimentos, garantindo a máxima economia com o mínimo de esforço.
 
 ## Estrutura do Projeto
 
-*   `/frontend`: Contém a aplicação de frontend (React) com a qual os usuários interagem.
-*   `app.py`: A API de backend (Python/Flask) que gerencia os dados do projeto, a lógica de negócio e o processamento de arquivos.
-*   `requirements.txt`: As dependências do backend Python.
+Este repositório está organizado da seguinte forma:
+
+-   `/mobile_app`: Contém o código-fonte do aplicativo móvel, desenvolvido em React Native. Esta é a interface com a qual o usuário final interage.
+-   `/backend`: Contém a API RESTful, desenvolvida em Python com o framework Flask. O backend é responsável por gerenciar usuários, listas de compras e executar o algoritmo de otimização.
+-   `/scrapers`: Contém os robôs (web scrapers) responsáveis pela coleta de dados de preços dos sites dos supermercados.
