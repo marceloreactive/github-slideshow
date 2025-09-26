@@ -1,13 +1,16 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
+# App de Atualização de Cronogramas do MS Project
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
+Este projeto é uma aplicação web desenvolvida para permitir a atualização remota de cronogramas do Microsoft Project. Ele foi projetado para facilitar a comunicação entre a equipe de planejamento e a equipe de campo em projetos de construção.
 
-Oh! I haven't introduced myself...
+## Fluxo de Trabalho
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+1.  **Importação:** O cronograma de uma obra, criado no MS Project, é exportado como um arquivo XML e importado para esta aplicação.
+2.  **Atualização em Campo:** A equipe de campo acessa o cronograma da obra através de uma interface web, onde podem atualizar o percentual de conclusão de cada tarefa, adicionar comentários e anexar fotos.
+3.  **Exportação:** As atualizações de progresso são consolidadas e podem ser exportadas em um formato compatível (XML ou CSV).
+4.  **Sincronização:** O planejador importa o arquivo de atualização de volta para o MS Project para sincronizar o cronograma com os dados mais recentes do campo.
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+## Estrutura do Projeto
 
-I'll meet you over there, can't wait to get started!
-
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+*   `/frontend`: Contém a aplicação de frontend (React) com a qual os usuários interagem.
+*   `app.py`: A API de backend (Python/Flask) que gerencia os dados do projeto, a lógica de negócio e o processamento de arquivos.
+*   `requirements.txt`: As dependências do backend Python.
