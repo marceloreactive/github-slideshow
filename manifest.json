@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Dublador de Vídeos do YouTube",
+  "description": "Dobra vídeos do YouTube de inglês para português usando síntese de voz.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tts"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
